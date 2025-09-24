@@ -1,63 +1,103 @@
-# Pune Parking App
+# 🚗 Parking Web App
 
-A mobile/web app to help users find, book, and pay for parking spots easily in Pune.
+A simple **Parking Management Web App** built using **Flask, SQLAlchemy, HTML, CSS, and JavaScript**.  
+This app helps manage parking slots, users, and bookings with a clean UI and backend integration.
 
-## Features
-- **Search Nearby Parking:** Find available parking spots near your location.
-- **Booking & Payment:** Reserve a spot and pay digitally.
-- **Real-time Availability:** See which spots are free or occupied.
-- **History & Receipts:** View past bookings and payment history.
-- **Ratings & Feedback:** Rate parking spots and provide feedback.
+---
 
-## Tech Stack
-- Frontend: [Your frontend tech, e.g., React, Flutter, HTML/CSS]
-- Backend: [Your backend tech, e.g., Flask, Node.js]
-- Database: [Your DB, e.g., Firebase, MySQL]
+## ✨ Features
+- 🔐 User authentication (Register/Login)
+- 🅿️ Manage parking slots (add, update, delete)
+- 📅 Book & release parking slots
+- 📊 Dashboard to view available/occupied slots
+- 📱 Responsive frontend with HTML, CSS, JS
+- 🗄️ Database integration using SQLAlchemy
+- ☁️ Ready for deployment on **Render/Heroku**
 
-## Installation
-1. Clone the repo:
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Flask (Python)  
+- **Database:** SQLAlchemy (SQLite/PostgreSQL)  
+- **Deployment:** Render / Heroku  
+
+---
+
+## 📂 Project Structure
+```bash
+parking_app/
+├── static/            # CSS, JS, Images
+├── templates/         # HTML templates
+├── app.py             # Main Flask app
+├── config.py          # Configuration file
+├── models.py          # Database models
+├── forms.py           # Forms handling
+├── requirements.txt   # Python dependencies
+├── Procfile           # Deployment config
+└── README.md          # Project documentation
+````
+
+---
+
+## ⚡ Installation & Setup
+
+1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/yourusername/parking-app.git
+   git clone https://github.com/chetanhire66/parking_app.git
+   cd parking_app
+   ```
 
-2. Install dependencies:
+2. **Create a virtual environment**
 
-npm install
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate    # On Mac/Linux
+   venv\Scripts\activate       # On Windows
+   ```
 
-or (if using Python/Flask):
+3. **Install dependencies**
 
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+4. **Set up the database**
 
-3. Run the app:
+   ```bash
+   flask db init
+   flask db migrate -m "Initial migration."
+   flask db upgrade
+   ```
 
-npm start
+5. **Run the app**
 
-or:
+   ```bash
+   flask run
+   ```
 
-python app.py
+6. Open in browser → [[http://127.0.0.1:5000](http://127.0.0.1:5000)](https://parking-app-va6k.onrender.com/all_spots)
 
+---
 
+## 🚀 Deployment
 
-Usage
+The app is ready for deployment on **Render/Heroku**.
 
-Open the app and allow location access.
+* Ensure `Procfile` and `requirements.txt` are present.
+* Push code to GitHub.
+* Connect repo to Render/Heroku.
+* Deploy and enjoy! 🎉
 
-Search for nearby parking spots.
+---
 
-Select a spot, book it, and pay securely.
+## 🤝 Contributing
 
-View your booking history and leave ratings.
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
+---
 
-Future Features
+## 📜 License
 
-Dynamic pricing based on peak hours.
-
-Membership plans with discounts.
-
-Integration with navigation apps for directions.
-
-
-Contributing
-
-Contributions are welcome! Please create a pull request or raise an issue.
+This project is licensed under the **MIT License** – feel free to use and modify.
